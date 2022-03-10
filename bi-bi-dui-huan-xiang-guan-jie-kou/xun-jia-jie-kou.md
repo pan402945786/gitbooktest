@@ -22,20 +22,21 @@
 
 整体为多个渠道价格的数组
 
-| 字段名称               | 字段描述                  | 类型      |
-| ------------------ | --------------------- | ------- |
-| fromTokenAmount    | 源币数量，乘以decimal后       | integer |
-| fromTokenDecimal   | 源币小数位                 | integer |
-| toTokenAmount      | 目标币数量，除以decimal后      | decimal |
-| toTokenDecimal     | 目标币小数位                | integer |
-| dex                | 兑换平台                  | string  |
-| fee                | 手续费，与源币单位一致           | decimal |
-| feeToken           | 手续费结算币种symbol         | string  |
-| receiveTokenAmount | 预计收到的目标币数量，除以decimal后 | decimal |
-| logoUrl            | 兑换平台logo              | string  |
-| dexStatus          | 兑换平台状态，默认空字符          | string  |
-| depositMax         | 最大源币兑换数量              | decimal |
-| depositMin         | 最小源币兑换数量              | decimal |
+| 字段名称               | 字段描述                  | 类型      |   |
+| ------------------ | --------------------- | ------- | - |
+| fromTokenAmount    | 源币数量，乘以decimal后       | integer |   |
+| fromTokenDecimal   | 源币小数位                 | integer |   |
+| toTokenAmount      | 目标币数量，除以decimal后      | decimal |   |
+| toTokenDecimal     | 目标币小数位                | integer |   |
+| dex                | 兑换平台                  | string  |   |
+| fee                | 手续费，与源币单位一致           | decimal |   |
+| feeToken           | 手续费结算币种symbol         | string  |   |
+| receiveTokenAmount | 预计收到的目标币数量，除以decimal后 | decimal |   |
+| logoUrl            | 兑换平台logo              | string  |   |
+| dexStatus          | 兑换平台状态，默认空字符          | string  |   |
+| depositMax         | 最大源币兑换数量（有存币范围的渠道才会有） | decimal |   |
+| depositMin         | 最小源币兑换数量（有存币范围的渠道才会有） | decimal |   |
+| kycInfo            | 当有kyc额度相关的渠道才会有       | object  |   |
 
 输入示例：
 
@@ -82,9 +83,9 @@
                 "depositMin": "30",
                 "depositMax": "15787.341",
                 "kycInfo": {
-                    "status": false,
-                    "cnUrl": "https://swap.swftcoin.com/swft-v3/swft-v3-m/kyc/kyc.html?lang=cn&equipmentNo=0x76336d2903e8f6d62cc3f5d0528310",
-                    "enUrl": "https://swap.swftcoin.com/swft-v3/swft-v3-m/kyc/kyc.html?lang=en&equipmentNo=0x76336d2903e8f6d62cc3f5d0528310"
+                    "status": false, // 是否需要kyc
+                    "cnUrl": "https://swap.swftcoin.com/swft-v3/swft-v3-m/kyc/kyc.html?lang=cn&equipmentNo=0x76336d2903e8f6d62cc3f5d0528310",// kyc的中文链接
+                    "enUrl": "https://swap.swftcoin.com/swft-v3/swft-v3-m/kyc/kyc.html?lang=en&equipmentNo=0x76336d2903e8f6d62cc3f5d0528310" // kyc的英文链接
                 },
                 "logoUrl": "https://images.swft.pro/dex/SWFT.png",
                 "dexStatus": ""
