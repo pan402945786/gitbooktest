@@ -12,6 +12,7 @@
 | fromTokenAddress | 源币合约地址            | string  | 是    |    |
 | toTokenAddress   | 目标币合约地址           | string  | 是    |    |
 | fromAddress      | 交易发起地址            | string  | 是    |    |
+| toAddress        | 收币地址              | string  | 是    |    |
 | fromTokenAmount  | 源币数量，乘以decimal后   | string  | 是    |    |
 | slippage         | 最大滑点，单位：%         | integer | 是    |    |
 | from\_chain      | 源链                | string  | 是    |    |
@@ -48,6 +49,7 @@
     "fromTokenAddress": "0xa71edc38d189767582c38a3145b5873052c3e47a",
     "toTokenAddress": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
     "fromAddress": "0x76336d2903e8f6d62cc3f5d05283108e3d2785e0",
+    "toAddress": "0x76336d2903e8f6d62cc3f5d05283108e3d2785e0",
     "fromTokenAmount": "48026755000000000000",
     "slippage": 1,
     "from_chain": "HECO",
