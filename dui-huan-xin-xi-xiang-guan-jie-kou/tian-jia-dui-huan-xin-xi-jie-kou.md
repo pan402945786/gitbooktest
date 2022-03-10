@@ -13,7 +13,7 @@
 | toTokenAddress   | 目标币合约地址           | string  | 是    |               |
 | fromAddress      | 交易发起地址            | string  | 是    |               |
 | toAddress        | 收币地址              | string  | 是    |               |
-| fromTokenAmount  | 源币数量，乘以decimal后   | string  | 是    |               |
+| fromTokenAmount  | 源币数量(带精度)         | string  | 是    |               |
 | slippage         | 最大滑点，单位：%         | integer | 是    |               |
 | fromChain        | 源链                | string  | 是    |               |
 | toChain          | 目标链               | string  | 是    |               |
