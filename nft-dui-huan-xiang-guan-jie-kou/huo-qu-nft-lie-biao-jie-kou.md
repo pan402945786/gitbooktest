@@ -6,14 +6,14 @@
 
 请求参数：
 
-| 字段名称       | 字段描述                   | 类型      | 是否必须 | 备注 |
-| ---------- | ---------------------- | ------- | ---- | -- |
-| type       | 类型：collection、platform | string  | 是    |    |
-| keyId      | 主键id                   | integer | 是    |    |
-| priceOrder | 价格排序标志位：asc升序，desc降序   | string  | 是    |    |
-| buyNow     | 是否获取可买条目：1是，0否         | integer | 是    |    |
-| page       | 页码                     | integer | 是    |    |
-| pageSize   | 每页数量                   | integer | 是    |    |
+| 字段名称       | 字段描述                   | 类型      | 是否必须 | 备注                   |
+| ---------- | ---------------------- | ------- | ---- | -------------------- |
+| type       | 类型：collection、platform | string  | 是    |                      |
+| keyId      | 主键id                   | integer | 是    | 对应基本信息接口返回的平台或者分类的ID |
+| priceOrder | 价格排序标志位：asc升序，desc降序   | string  | 是    |                      |
+| buyNow     | 是否获取可买条目：1是，0否         | integer | 是    |                      |
+| page       | 页码                     | integer | 是    |                      |
+| pageSize   | 每页数量                   | integer | 是    |                      |
 
 输出参数：
 
