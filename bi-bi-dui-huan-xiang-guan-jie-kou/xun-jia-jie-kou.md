@@ -22,21 +22,21 @@
 
 整体为多个渠道价格的数组
 
-| 字段名称               | 字段描述                  | 类型      |   |
-| ------------------ | --------------------- | ------- | - |
-| fromTokenAmount    | 源币数量，乘以decimal后       | integer |   |
-| fromTokenDecimal   | 源币小数位                 | integer |   |
-| toTokenAmount      | 目标币数量，除以decimal后      | decimal |   |
-| toTokenDecimal     | 目标币小数位                | integer |   |
-| dex                | 兑换平台                  | string  |   |
-| fee                | 手续费，与源币单位一致           | decimal |   |
-| feeToken           | 手续费结算币种symbol         | string  |   |
-| receiveTokenAmount | 预计收到的目标币数量，除以decimal后 | decimal |   |
-| logoUrl            | 兑换平台logo              | string  |   |
-| dexStatus          | 兑换平台状态，默认空字符          | string  |   |
-| depositMax         | 最大源币兑换数量（有存币范围的渠道才会有） | decimal |   |
-| depositMin         | 最小源币兑换数量（有存币范围的渠道才会有） | decimal |   |
-| kycInfo            | 当有kyc额度相关的渠道才会有       | object  |   |
+| 字段名称               | 字段描述                                     | 类型      |   |
+| ------------------ | ---------------------------------------- | ------- | - |
+| fromTokenAmount    | 源币数量，乘以decimal后                          | integer |   |
+| fromTokenDecimal   | 源币小数位                                    | integer |   |
+| toTokenAmount      | 目标币数量，除以decimal后                         | decimal |   |
+| toTokenDecimal     | 目标币小数位                                   | integer |   |
+| dex                | 兑换平台                                     | string  |   |
+| fee                | 手续费，与源币单位一致                              | decimal |   |
+| feeToken           | 手续费结算币种symbol                            | string  |   |
+| receiveTokenAmount | 预计收到的目标币数量，除以decimal后                    | decimal |   |
+| logoUrl            | 兑换平台logo                                 | string  |   |
+| dexStatus          | 兑换平台状态，默认空字符                             | string  |   |
+| depositMax         | 最大源币兑换数量（有存币范围的渠道才会有）                    | decimal |   |
+| depositMin         | 最小源币兑换数量（有存币范围的渠道才会有）                    | decimal |   |
+| kycInfo            | 当有kyc额度相关的渠道才会有，包含是否需要kyc的status和中英文链接字段 | object  |   |
 
 输入示例：
 
