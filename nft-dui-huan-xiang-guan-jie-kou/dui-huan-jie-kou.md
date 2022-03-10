@@ -6,14 +6,14 @@
 
 请求参数：
 
-| 字段名称        | 字段描述     | 类型      | 是否必须 | 备注 |
-| ----------- | -------- | ------- | ---- | -- |
-| equipmentNo | 设备码      | string  | 是    |    |
-| userAddr    | 发起交易用户地址 | string  | 是    |    |
-| txInfo      | 询价信息     | Object  | 是    |    |
-| platformId  | 平台主键id   | integer | 是    |    |
-| orderSide   | 1：买，0：卖  | string  | 是    |    |
-| nftId       | NFT主键id  | integer | 是    |    |
+| 字段名称        | 字段描述     | 类型      | 是否必须 | 备注                        |
+| ----------- | -------- | ------- | ---- | ------------------------- |
+| equipmentNo | 设备码      | string  | 是    |                           |
+| userAddr    | 发起交易用户地址 | string  | 是    |                           |
+| txInfo      | 询价信息     | Object  | 是    | 需要将询价接口中的txInfo，按照原数据格式提交 |
+| platformId  | 平台主键id   | integer | 是    | 列表接口中返回的平台唯一ID            |
+| orderSide   | 1：买，0：卖  | string  | 是    |                           |
+| nftId       | NFT主键id  | integer | 是    | 列表接口中返回的nft唯一ID           |
 
 输出参数：
 
