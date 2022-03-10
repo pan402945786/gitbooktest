@@ -15,14 +15,15 @@
 | toAddress        | 收币地址              | string  | 是    |               |
 | fromTokenAmount  | 源币数量，乘以decimal后   | string  | 是    |               |
 | slippage         | 最大滑点，单位：%         | integer | 是    |               |
-| from\_chain      | 源链                | string  | 是    |               |
-| to\_chain        | 目标链               | string  | 是    |               |
+| fromChain        | 源链                | string  | 是    |               |
+| toChain          | 目标链               | string  | 是    |               |
 | hash             | 交易hash            | string  | 是    |               |
 | toTokenAmount    | 目标币数量，除以decimal后  | decimal | 是    |               |
 | dexName          | 兑换平台名称            | string  | 是    |               |
-| orderId          | 订单id，如无填空字符串      | string  | 是    |               |
-| orderType        | 订单类型，如无填空字符串      | string  | 是    |               |
+| orderId          | 订单id，如无填空字符串      | string  | 否    |               |
+| orderType        | 订单类型，如无填空字符串      | string  | 否    |               |
 | transferData     | 兑换自定义过程信息，如无填null | string  | 否    | 自定义过程，由兑换接口带回 |
+| source           | 渠道的唯一标识           | string  | 否    |               |
 
 输出参数：
 
