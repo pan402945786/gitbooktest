@@ -28,7 +28,7 @@
 | paymentContract  | 支付币种合约地址              | string  |
 | paymentDecimals  | 支付币种小数位               | integer |
 | paymentUrl       | 支付币种logo地址            | string  |
-| ownerAddress     | 当前主任地址                | string  |
+| ownerAddress     | 当前拥有者地址               | string  |
 | imageUrl         | NFT图片地址               | string  |
 | mainnet          | NFT所属链                | string  |
 | paymentTokenName | 支付币种名称                | string  |
