@@ -6,22 +6,22 @@
 
 请求参数：
 
-| 字段名称             | 字段描述                          | 类型      | 是否必须 | 备注 |
-| ---------------- | ----------------------------- | ------- | ---- | -- |
-| equipmentNo      | 设备码                           | string  | 是    |    |
-| fromTokenAddress | 源币合约地址                        | string  | 是    |    |
-| toTokenAddress   | 目标币合约地址                       | string  | 是    |    |
-| fromAddress      | 源币用户地址                        | string  | 是    |    |
-| toAddress        | 收币地址                          | string  | 是    |    |
-| amountOutMin     | 最小接收数量                        | integer | 是    |    |
-| routerPath       | 兑换路径，如无指定路径，可设置为空数组（o3平台必传）   | array   | 是    |    |
-| amounts          | 各路径最少收到币数量，如无路径，可设置为空（o3平台必传） | array   | 是    |    |
-| dex              | 兑换平台名称                        | string  | 是    |    |
-| aggregator       | 聚合器名称（o3平台必传）                 | string  | 是    |    |
-| fromTokenChain   | 源链                            | string  | 是    |    |
-| toTokenChain     | 目标链                           | string  | 是    |    |
-| fromTokenAmount  | 源币数量                          | integer | 是    |    |
-| slippage         | 滑点                            | decimal | 是    |    |
+| 字段名称             | 字段描述                  | 类型      | 是否必须 | 备注                         |
+| ---------------- | --------------------- | ------- | ---- | -------------------------- |
+| equipmentNo      | 设备码                   | string  | 是    |                            |
+| fromTokenAddress | 源币合约地址                | string  | 是    |                            |
+| toTokenAddress   | 目标币合约地址               | string  | 是    |                            |
+| fromAddress      | 源币用户地址                | string  | 是    |                            |
+| toAddress        | 收币地址                  | string  | 是    |                            |
+| amountOutMin     | 最小接收数量                | integer | 是    |                            |
+| routerPath       | 兑换路径，如无指定路径，可设置为空数组   | array   | 是    | o3和类uniswap平台必传            |
+| amounts          | 各路径最少收到币数量，如无路径，可设置为空 | array   | 否    | o3平台必传                     |
+| dex              | 兑换平台名称                | string  | 是    | 用于区分使用渠道                   |
+| aggregator       | 聚合器名称                 | string  | 是    | o3平台必传，代表其原链的单链兑换所使用的DEX名称 |
+| fromTokenChain   | 源链                    | string  | 是    |                            |
+| toTokenChain     | 目标链                   | string  | 是    |                            |
+| fromTokenAmount  | 源币数量                  | integer | 是    |                            |
+| slippage         | 滑点                    | decimal | 是    |                            |
 
 输出参数：
 
