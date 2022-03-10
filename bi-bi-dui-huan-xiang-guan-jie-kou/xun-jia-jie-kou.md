@@ -6,17 +6,17 @@
 
 请求参数：
 
-| 字段名称             | 字段描述               | 类型      | 是否必须            | 备注                                                                               |
-| ---------------- | ------------------ | ------- | --------------- | -------------------------------------------------------------------------------- |
-| equipmentNo      | 设备码                | string  | 是               | TBD                                                                              |
-| fromTokenAddress | 源币合约地址             | string  | 是               |                                                                                  |
-| toTokenAddress   | 目标币合约地址            | string  | 是               |                                                                                  |
-| fromTokenAmount  | 源币数量，乘以decimal后的数量 | integer | <p></p><p>是</p> |                                                                                  |
-| fromTokenChain   | 源币所在链              | string  | 是               | 参见《[主要区块链名称约定](../ji-ben-shuo-ming/zhu-yao-qu-kuai-lian-ming-cheng-yue-ding.md)》 |
-| toTokenChain     | 目标币所在链             | string  | 是               | 参见《[主要区块链名称约定](../ji-ben-shuo-ming/zhu-yao-qu-kuai-lian-ming-cheng-yue-ding.md)》 |
-| userAddr         | 用户地址               | string  | 是               |                                                                                  |
-| toAddress        | 收币地址               | string  | 是               |                                                                                  |
-| slippage         | 用户可接受滑点，单位：%       | decimal | 是               |                                                                                  |
+| 字段名称             | 字段描述               | 类型      | 是否必须 | 备注                                                                               |
+| ---------------- | ------------------ | ------- | ---- | -------------------------------------------------------------------------------- |
+| equipmentNo      | 设备码                | string  | 是    | 参见[通用说明](../ji-ben-shuo-ming/tong-yong-shuo-ming.md#she-bei-ma-shuo-ming)中设备码部分  |
+| fromTokenAddress | 源币合约地址             | string  | 是    |                                                                                  |
+| toTokenAddress   | 目标币合约地址            | string  | 是    |                                                                                  |
+| fromTokenAmount  | 源币数量，乘以decimal后的数量 | integer | 是    |                                                                                  |
+| fromTokenChain   | 源币所在链              | string  | 是    | 参见《[主要区块链名称约定](../ji-ben-shuo-ming/zhu-yao-qu-kuai-lian-ming-cheng-yue-ding.md)》 |
+| toTokenChain     | 目标币所在链             | string  | 是    | 参见《[主要区块链名称约定](../ji-ben-shuo-ming/zhu-yao-qu-kuai-lian-ming-cheng-yue-ding.md)》 |
+| userAddr         | 用户地址               | string  | 是    |                                                                                  |
+| toAddress        | 收币地址               | string  | 是    |                                                                                  |
+| slippage         | 用户可接受滑点，单位：%       | decimal | 是    |                                                                                  |
 
 输出参数：
 
