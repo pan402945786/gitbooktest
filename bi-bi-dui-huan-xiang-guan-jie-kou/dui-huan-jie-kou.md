@@ -76,3 +76,7 @@
     }
 }
 ```
+
+Postman调用示例
+
+![](../.gitbook/assets/swap-cc.png)

@@ -58,3 +58,7 @@
     }
 }
 ```
+
+Postman调用示例
+
+![](../.gitbook/assets/nft-getownedasset.png)

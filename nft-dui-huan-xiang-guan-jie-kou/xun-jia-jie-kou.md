@@ -71,3 +71,7 @@
     }
 }
 ```
+
+Postman调用示例
+
+![](../.gitbook/assets/nft-quote.png)

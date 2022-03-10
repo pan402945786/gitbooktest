@@ -106,3 +106,7 @@
     }
 }
 ```
+
+Postman调用示例
+
+![](../.gitbook/assets/quote-cc.png)

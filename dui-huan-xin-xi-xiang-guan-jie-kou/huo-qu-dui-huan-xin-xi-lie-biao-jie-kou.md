@@ -80,3 +80,7 @@
     }
 }
 ```
+
+Postman调用示例
+
+![](../.gitbook/assets/nft-getorderlist.png)

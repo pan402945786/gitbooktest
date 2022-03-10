@@ -60,3 +60,7 @@
     }
 }
 ```
+
+Postman调用示例
+
+![](../.gitbook/assets/nft-swap.png)

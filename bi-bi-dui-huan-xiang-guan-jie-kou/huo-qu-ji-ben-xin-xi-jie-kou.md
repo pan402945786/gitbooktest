@@ -98,3 +98,7 @@
     }
 }
 ```
+
+Postman调用示例
+
+![](../.gitbook/assets/getbaseinfo.png)
