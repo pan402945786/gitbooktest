@@ -17,7 +17,7 @@
 | routerPath       | 兑换路径，如无指定路径，可设置为空数组   | array   | 是    | o3和类uniswap平台必传            |
 | amounts          | 各路径最少收到币数量，如无路径，可设置为空 | array   | 否    | o3平台必传                     |
 | dex              | 兑换平台名称                | string  | 是    | 用于区分使用渠道                   |
-| aggregator       | 聚合器名称                 | string  | 是    | o3平台必传，代表其原链的单链兑换所使用的DEX名称 |
+| aggregator       | 聚合器名称                 | string  | 否    | o3平台必传，代表其原链的单链兑换所使用的DEX名称 |
 | fromTokenChain   | 源链                    | string  | 是    |                            |
 | toTokenChain     | 目标链                   | string  | 是    |                            |
 | fromTokenAmount  | 源币数量                  | integer | 是    |                            |
