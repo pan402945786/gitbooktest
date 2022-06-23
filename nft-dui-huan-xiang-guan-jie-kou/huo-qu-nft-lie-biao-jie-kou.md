@@ -6,14 +6,14 @@
 
 请求参数：
 
-| 字段名称       | 字段描述                   | 类型      | 是否必须 | 备注                   |
-| ---------- | ---------------------- | ------- | ---- | -------------------- |
-| type       | 类型：collection、platform | string  | 是    |                      |
-| keyId      | 主键id                   | integer | 是    | 对应基本信息接口返回的平台或者分类的ID |
-| priceOrder | 价格排序标志位：asc升序，desc降序   | string  | 是    |                      |
-| buyNow     | 是否获取可买条目：1是，0否         | integer | 是    |                      |
-| page       | 页码                     | integer | 是    |                      |
-| pageSize   | 每页数量                   | integer | 是    |                      |
+| 字段名称       | 字段描述                   | 类型      | 是否必须 | 备注 |
+| ---------- | ---------------------- | ------- | ---- | -- |
+| type       | 类型：collection、platform | string  | 是    |    |
+| keyId      | 主键id                   | integer | 是    |    |
+| priceOrder | 价格排序标志位：asc升序，desc降序   | string  | 是    |    |
+| buyNow     | 是否获取可买条目：1是，0否         | integer | 是    |    |
+| page       | 页码                     | integer | 是    |    |
+| pageSize   | 每页数量                   | integer | 是    |    |
 
 输出参数：
 
@@ -28,7 +28,7 @@
 | paymentContract  | 支付币种合约地址              | string  |
 | paymentDecimals  | 支付币种小数位               | integer |
 | paymentUrl       | 支付币种logo地址            | string  |
-| ownerAddress     | 当前拥有者地址               | string  |
+| ownerAddress     | 当前主任地址                | string  |
 | imageUrl         | NFT图片地址               | string  |
 | mainnet          | NFT所属链                | string  |
 | paymentTokenName | 支付币种名称                | string  |
@@ -99,7 +99,3 @@
     }
 }
 ```
-
-Postman调用示例
-
-![](../.gitbook/assets/nft-getlist.png)

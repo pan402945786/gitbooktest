@@ -18,20 +18,20 @@
 
 输出参数：
 
-| 字段名称             | 字段描述         | 类型      |
-| ---------------- | ------------ | ------- |
-| fromTokenAmount  | 源币数量，乘以精度后   | integer |
-| fromTokenDecimal | 源币精度         | integer |
-| toTokenAmount    | 目标币数量，除以精度后  | integer |
-| toTokenDecimal   | 目标币精度        | integer |
-| dex              | 兑换平台         | string  |
-| path             | 兑换路径         | array   |
-| fee              | 手续费金额        | decimal |
-| feeToken         | 手续费支付token名称 | string  |
-| logoUrl          | logo地址       | string  |
-| platformId       | 平台主键id       | integer |
-| paymentInfo      | 支付信息         | Object  |
-| txInfo           | 兑换时需传回的参数    | Object  |
+| 字段名称             | 字段描述             | 类型      |
+| ---------------- | ---------------- | ------- |
+| fromTokenAmount  | 源币数量，乘以decimal后  | integer |
+| fromTokenDecimal | 源币小数位            | integer |
+| toTokenAmount    | 目标币数量，除以decimal后 | integer |
+| toTokenDecimal   | 目标币小数位           | integer |
+| dex              | 兑换平台             | string  |
+| path             | 兑换路径             | array   |
+| fee              | 手续费金额            | decimal |
+| feeToken         | 手续费支付token名称     | string  |
+| logoUrl          | logo地址           | string  |
+| platformId       | 平台主键id           | integer |
+| paymentInfo      | 支付信息             | Object  |
+| txInfo           | 兑换时需传回的参数        | Object  |
 
 输入示例：
 
@@ -71,7 +71,3 @@
     }
 }
 ```
-
-Postman调用示例
-
-![](../.gitbook/assets/nft-quote.png)

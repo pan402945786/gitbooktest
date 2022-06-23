@@ -6,37 +6,34 @@
 
 请求参数：
 
-| 字段名称             | 字段描述               | 类型      | 是否必须 | 备注                                                                               |
-| ---------------- | ------------------ | ------- | ---- | -------------------------------------------------------------------------------- |
-| equipmentNo      | 设备码                | string  | 是    | 参见[通用说明](../ji-ben-shuo-ming/tong-yong-shuo-ming.md#she-bei-ma-shuo-ming)中设备码部分  |
-| fromTokenAddress | 源币合约地址             | string  | 是    |                                                                                  |
-| toTokenAddress   | 目标币合约地址            | string  | 是    |                                                                                  |
-| fromTokenAmount  | 源币数量，乘以decimal后的数量 | integer | 是    |                                                                                  |
-| fromTokenChain   | 源币所在链              | string  | 是    | 参见《[主要区块链名称约定](../ji-ben-shuo-ming/zhu-yao-qu-kuai-lian-ming-cheng-yue-ding.md)》 |
-| toTokenChain     | 目标币所在链             | string  | 是    | 参见《[主要区块链名称约定](../ji-ben-shuo-ming/zhu-yao-qu-kuai-lian-ming-cheng-yue-ding.md)》 |
-| userAddr         | 用户地址               | string  | 是    |                                                                                  |
-| toAddress        | 收币地址               | string  | 是    |                                                                                  |
-| slippage         | 用户可接受滑点，单位：%       | decimal | 是    |                                                                                  |
+| 字段名称             | 字段描述               | 类型      | 是否必须            | 备注                                                                               |
+| ---------------- | ------------------ | ------- | --------------- | -------------------------------------------------------------------------------- |
+| equipmentNo      | 设备码                | string  | 是               | TBD                                                                              |
+| fromTokenAddress | 源币合约地址             | string  | 是               |                                                                                  |
+| toTokenAddress   | 目标币合约地址            | string  | 是               |                                                                                  |
+| fromTokenAmount  | 源币数量，乘以decimal后的数量 | integer | <p></p><p>是</p> |                                                                                  |
+| fromTokenChain   | 源币所在链              | string  | 是               | 参见《[主要区块链名称约定](../ji-ben-shuo-ming/zhu-yao-qu-kuai-lian-ming-cheng-yue-ding.md)》 |
+| toTokenChain     | 目标币所在链             | string  | 是               | 参见《[主要区块链名称约定](../ji-ben-shuo-ming/zhu-yao-qu-kuai-lian-ming-cheng-yue-ding.md)》 |
+| userAddr         | 用户地址               | string  | 是               |                                                                                  |
+| toAddress        | 收币地址               | string  | 是               |                                                                                  |
+| slippage         | 用户可接受滑点，单位：%       | decimal | 是               |                                                                                  |
 
 输出参数：
 
-整体为多个渠道价格的数组
-
-| 字段名称               | 字段描述                                     | 类型      |   |
-| ------------------ | ---------------------------------------- | ------- | - |
-| fromTokenAmount    | 源币数量，乘以精度后                               | integer |   |
-| fromTokenDecimal   | 源币精度                                     | integer |   |
-| toTokenAmount      | 目标币数量，除以精度后                              | decimal |   |
-| toTokenDecimal     | 目标币精度                                    | integer |   |
-| dex                | 兑换平台                                     | string  |   |
-| fee                | 手续费，与源币单位一致                              | decimal |   |
-| feeToken           | 手续费结算币种symbol                            | string  |   |
-| receiveTokenAmount | 预计收到的目标币数量，除以精度后                         | decimal |   |
-| logoUrl            | 兑换平台logo                                 | string  |   |
-| dexStatus          | 兑换平台状态，默认空字符                             | string  |   |
-| depositMax         | 最大源币兑换数量（有存币范围的渠道才会有）                    | decimal |   |
-| depositMin         | 最小源币兑换数量（有存币范围的渠道才会有）                    | decimal |   |
-| kycInfo            | 当有kyc额度相关的渠道才会有，包含是否需要kyc的status和中英文链接字段 | object  |   |
+| 字段名称               | 字段描述                  | 类型      |
+| ------------------ | --------------------- | ------- |
+| fromTokenAmount    | 源币数量，乘以decimal后       | integer |
+| fromTokenDecimal   | 源币小数位                 | integer |
+| toTokenAmount      | 目标币数量，除以decimal后      | decimal |
+| toTokenDecimal     | 目标币小数位                | integer |
+| dex                | 兑换平台                  | string  |
+| fee                | 手续费，与源币单位一致           | decimal |
+| feeToken           | 手续费结算币种symbol         | string  |
+| receiveTokenAmount | 预计收到的目标币数量，除以decimal后 | decimal |
+| logoUrl            | 兑换平台logo              | string  |
+| dexStatus          | 兑换平台状态，默认空字符          | string  |
+| depositMax         | 最大源币兑换数量              | decimal |
+| depositMin         | 最小源币兑换数量              | decimal |
 
 输入示例：
 
@@ -83,9 +80,9 @@
                 "depositMin": "30",
                 "depositMax": "15787.341",
                 "kycInfo": {
-                    "status": false, // 是否需要kyc
-                    "cnUrl": "https://swap.swftcoin.com/swft-v3/swft-v3-m/kyc/kyc.html?lang=cn&equipmentNo=0x76336d2903e8f6d62cc3f5d0528310",// kyc的中文链接
-                    "enUrl": "https://swap.swftcoin.com/swft-v3/swft-v3-m/kyc/kyc.html?lang=en&equipmentNo=0x76336d2903e8f6d62cc3f5d0528310" // kyc的英文链接
+                    "status": false,
+                    "cnUrl": "https://swap.swftcoin.com/swft-v3/swft-v3-m/kyc/kyc.html?lang=cn&equipmentNo=0x76336d2903e8f6d62cc3f5d0528310",
+                    "enUrl": "https://swap.swftcoin.com/swft-v3/swft-v3-m/kyc/kyc.html?lang=en&equipmentNo=0x76336d2903e8f6d62cc3f5d0528310"
                 },
                 "logoUrl": "https://images.swft.pro/dex/SWFT.png",
                 "dexStatus": ""
@@ -109,7 +106,3 @@
     }
 }
 ```
-
-Postman调用示例
-
-![](../.gitbook/assets/quote-cc.png)

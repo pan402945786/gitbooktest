@@ -94,11 +94,7 @@
                 "isCrossEnable": false
             }
         ],
-        "quoteSwitch": true
+        "quoteSwitch": false
     }
 }
 ```
-
-Postman调用示例
-
-![](../.gitbook/assets/getbaseinfo.png)

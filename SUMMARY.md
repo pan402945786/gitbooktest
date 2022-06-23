@@ -1,10 +1,10 @@
 # Table of contents
 
 * [基本说明](README.md)
+  * [兑换流程](readme/dui-huan-liu-cheng.md)
   * [通用说明](ji-ben-shuo-ming/tong-yong-shuo-ming.md)
   * [主要区块链名称约定](ji-ben-shuo-ming/zhu-yao-qu-kuai-lian-ming-cheng-yue-ding.md)
 * [币币兑换相关接口](bi-bi-dui-huan-xiang-guan-jie-kou/README.md)
-  * [币币兑换流程](bi-bi-dui-huan-xiang-guan-jie-kou/dui-huan-liu-cheng.md)
   * [获取基本信息接口](bi-bi-dui-huan-xiang-guan-jie-kou/huo-qu-ji-ben-xin-xi-jie-kou.md)
   * [询价接口](bi-bi-dui-huan-xiang-guan-jie-kou/xun-jia-jie-kou.md)
   * [兑换接口](bi-bi-dui-huan-xiang-guan-jie-kou/dui-huan-jie-kou.md)

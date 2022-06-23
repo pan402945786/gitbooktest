@@ -6,24 +6,22 @@
 
 请求参数：
 
-| 字段名称             | 字段描述              | 类型      | 是否必须 | 备注            |
-| ---------------- | ----------------- | ------- | ---- | ------------- |
-| equipmentNo      | 设备码               | string  | 是    |               |
-| fromTokenAddress | 源币合约地址            | string  | 是    |               |
-| toTokenAddress   | 目标币合约地址           | string  | 是    |               |
-| fromAddress      | 交易发起地址            | string  | 是    |               |
-| toAddress        | 收币地址              | string  | 是    |               |
-| fromTokenAmount  | 源币数量(带精度)         | string  | 是    |               |
-| slippage         | 最大滑点，单位：%         | integer | 是    |               |
-| fromChain        | 源链                | string  | 是    |               |
-| toChain          | 目标链               | string  | 是    |               |
-| hash             | 交易hash            | string  | 是    |               |
-| toTokenAmount    | 目标币数量，除以decimal后  | decimal | 是    |               |
-| dexName          | 兑换平台名称            | string  | 是    |               |
-| orderId          | 订单id，如无填空字符串      | string  | 否    |               |
-| orderType        | 订单类型，如无填空字符串      | string  | 否    |               |
-| transferData     | 兑换自定义过程信息，如无填null | string  | 否    | 自定义过程，由兑换接口带回 |
-| source           | 渠道的唯一标识           | string  | 否    |               |
+| 字段名称             | 字段描述              | 类型      | 是否必须 | 备注 |
+| ---------------- | ----------------- | ------- | ---- | -- |
+| equipmentNo      | 设备码               | string  | 是    |    |
+| fromTokenAddress | 源币合约地址            | string  | 是    |    |
+| toTokenAddress   | 目标币合约地址           | string  | 是    |    |
+| fromAddress      | 交易发起地址            | string  | 是    |    |
+| fromTokenAmount  | 源币数量，乘以decimal后   | string  | 是    |    |
+| slippage         | 最大滑点，单位：%         | integer | 是    |    |
+| from\_chain      | 源链                | string  | 是    |    |
+| to\_chain        | 目标链               | string  | 是    |    |
+| hash             | 交易hash            | string  | 是    |    |
+| toTokenAmount    | 目标币数量，除以decimal后  | decimal | 是    |    |
+| dexName          | 兑换平台名称            | string  | 是    |    |
+| orderId          | 订单id，如无填空字符串      | string  | 是    |    |
+| orderType        | 订单类型，如无填空字符串      | string  | 是    |    |
+| transferData     | 兑换自定义过程信息，如无填null | string  | 是    |    |
 
 输出参数：
 
@@ -50,7 +48,6 @@
     "fromTokenAddress": "0xa71edc38d189767582c38a3145b5873052c3e47a",
     "toTokenAddress": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
     "fromAddress": "0x76336d2903e8f6d62cc3f5d05283108e3d2785e0",
-    "toAddress": "0x76336d2903e8f6d62cc3f5d05283108e3d2785e0",
     "fromTokenAmount": "48026755000000000000",
     "slippage": 1,
     "from_chain": "HECO",
@@ -93,7 +90,3 @@
     }
 }
 ```
-
-Postman调用示例
-
-![](../.gitbook/assets/nft-addtransferdata.png)
